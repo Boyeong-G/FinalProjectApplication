@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/endangered"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#ffffff"
+    tools:context=".EndangeredActivity"
+    android:padding="20dp"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/endangeredTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/gamtanrodeutantan"
+        android:text="멸종위기 생물"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontal_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <android.widget.Button
+                android:id="@+id/endangered_button_all"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/endangeredbuttonchecked"
+                android:fontFamily="@font/gamtanrodeutantan"
+                android:textColor="#212121"
+                android:textSize="15dp"
+                android:text="전체" />
+
+            <android.widget.Button
+                android:id="@+id/endangered_button_animal"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/endangeredbutton"
+                android:fontFamily="@font/gamtanrodeutantan"
+                android:text="동물"
+                android:textColor="#4C4C4C"
+                android:textSize="15dp" />
+
+            <android.widget.Button
+                android:id="@+id/endangered_button_plant"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/endangeredbutton"
+                android:fontFamily="@font/gamtanrodeutantan"
+                android:textColor="#4C4C4C"
+                android:textSize="15dp"
+                android:text="식물" />
+
+            <android.widget.Button
+                android:id="@+id/endangered_button_insect"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/endangeredbutton"
+                android:fontFamily="@font/gamtanrodeutantan"
+                android:textColor="#4C4C4C"
+                android:textSize="15dp"
+                android:text="곤충" />
+
+            <android.widget.Button
+                android:id="@+id/endangered_button_mushroom"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/endangeredbutton"
+                android:fontFamily="@font/gamtanrodeutantan"
+                android:textColor="#4C4C4C"
+                android:textSize="15dp"
+                android:text="버섯" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/endangered_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center">
+    </androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>

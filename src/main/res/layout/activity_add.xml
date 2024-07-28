@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/add"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="#F2FFED"
+    android:orientation="vertical"
+    tools:context=".AddActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="질문 작성"
+            android:fontFamily="@font/gamtanrodeutantan"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/add_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/gamtanrodeutantan"
+            android:textSize="15dp"
+            android:text="작성자 ID"/>
+        <EditText
+            android:id="@+id/add_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:textSize="20dp"
+            android:gravity="start|top"
+            android:fontFamily="@font/gamtanrodeutantan"
+            android:textColor="#000000"
+            android:hint="질문 제목"
+            android:inputType="textMultiLine"/>
+        <EditText
+            android:id="@+id/add_input"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:textSize="20dp"
+            android:gravity="start|top"
+            android:fontFamily="@font/gamtanrodeutantan"
+            android:textColor="#000000"
+            android:hint="질문 내용"
+            android:inputType="textMultiLine"/>
+        <android.widget.Button
+            android:id="@+id/add_imageUploadButton"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fabbutton"
+            android:fontFamily="@font/gamtanrodeutantan"
+            android:textColor="#000000"
+            android:text="이미지 불러오기"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/q_addImageView"
+            android:visibility="gone"/>
+        <android.widget.Button
+            android:id="@+id/add_saveButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/addbuttonshape"
+            android:fontFamily="@font/gamtanrodeutantan"
+            android:textColor="#000000"
+            android:text="저장하기"
+            android:textSize="20dp"
+            android:layout_marginTop="50dp"/>
+    </LinearLayout>
+</ScrollView>

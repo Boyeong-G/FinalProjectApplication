@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Qresult"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#F2FFED"
+    tools:context=".QresultActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:gravity="start">
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="15dp"
+            android:background="@drawable/qresultbackground"
+            android:columnCount="2">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gamtanrodeutantan"
+                android:text="Q.  "
+                android:textColor="#000000"
+                android:textSize="25dp" />
+            <TextView
+                android:id="@+id/qresult_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gamtanrodeutantan"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="25dp" />
+        </GridLayout>
+
+        <ImageButton
+            android:id="@+id/qresult_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="end"
+            android:visibility="gone"
+            android:src="@drawable/delete"
+            android:background="@drawable/nobackgroundbutton"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:id="@+id/qresult_imgUrl1" />
+
+        <TextView
+            android:id="@+id/qresult_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:fontFamily="@font/gamtanrodeutantan"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:padding="15dp"
+            android:background="@drawable/naviheaderbackground"
+            android:columnCount="2">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/gamtanrodeutantan"
+                android:text="작성자:   "
+                android:textSize="15dp" />
+            <TextView
+                android:id="@+id/qresult_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/gamtanrodeutantan"
+                android:text=""
+                android:textSize="15dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/gamtanrodeutantan"
+                android:text="작성일:   "
+                android:textSize="15dp" />
+            <TextView
+                android:id="@+id/qresult_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/gamtanrodeutantan"
+                android:text=""
+                android:textSize="15dp" />
+        </GridLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/gamtanrodeutantan"
+            android:textStyle="bold"
+            android:text="댓글"
+            android:textSize="18dp" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/qresult_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:baselineAligned="false">
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="50dp"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/qresult_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:ems="15"
+                android:fontFamily="@font/gamtanrodeutantan"
+                android:hint="댓글을 입력하세요."
+                android:inputType="text"
+                android:paddingEnd="10dp"
+                android:textSize="18dp" />
+
+            <android.widget.Button
+                android:id="@+id/qresult_botton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fabbutton"
+                android:fontFamily="@font/gamtanrodeutantan"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:text="등록" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

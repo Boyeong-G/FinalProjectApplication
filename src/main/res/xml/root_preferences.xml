@@ -1,0 +1,12 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory app:title="알림 설정">
+        <SwitchPreferenceCompat app:key="alarm" app:summaryOff="비활성화" app:summaryOn="활성화" app:title="알림" app:defaultValue="false"/>
+<!--        <SwitchPreferenceCompat app:key="comment" app:title="댓글 알림" app:defaultValue="true"/>-->
+<!--        <SwitchPreferenceCompat app:dependency="alarm" app:key="like" app:title="좋아요 알림" app:defaultValue="true"/>-->
+    </PreferenceCategory>
+    <PreferenceCategory app:title="화면 설정">
+        <ListPreference app:defaultValue="#E0FFDB" app:entries="@array/background_color" app:entryValues="@array/background_color_values" app:key="background" app:title="테마색 변경" app:useSimpleSummaryProvider="true"/>
+        <ListPreference app:defaultValue="250" app:entries="@array/imgae_size" app:entryValues="@array/imgae_size_values" app:key="image" app:title="사진 크기 변경" app:useSimpleSummaryProvider="true"/>
+        <ListPreference app:defaultValue="20.0f" app:entries="@array/font_size" app:entryValues="@array/font_size_values" app:key="font" app:title="글자 크기 변경" app:useSimpleSummaryProvider="true"/>
+    </PreferenceCategory>
+</PreferenceScreen>

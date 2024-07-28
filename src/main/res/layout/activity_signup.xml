@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/signup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="#F2FFED"
+    tools:context=".SigninActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/gamtanrodeutantan"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:text="회원가입" />
+
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginEnd="30dp"-->
+<!--        android:layout_marginStart="30dp"-->
+<!--        android:fontFamily="@font/gamtanrodeutantan"-->
+<!--        android:textSize="13dp"-->
+<!--        android:textColor="#000000"-->
+<!--        android:text="성함을 입력하십시오." />-->
+<!--    <EditText-->
+<!--        android:id="@+id/name_up"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginEnd="30dp"-->
+<!--        android:layout_marginStart="30dp"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        android:ems="5"-->
+<!--        android:inputType="text"-->
+<!--        android:fontFamily="@font/gamtanrodeutantan"-->
+<!--        android:textSize="20dp"-->
+<!--        android:textColor="#000000"-->
+<!--        android:hint="홍길동" />-->
+
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginEnd="30dp"-->
+<!--        android:layout_marginStart="30dp"-->
+<!--        android:fontFamily="@font/gamtanrodeutantan"-->
+<!--        android:textSize="13dp"-->
+<!--        android:textColor="#000000"-->
+<!--        android:text="생년월일을 입력하십시오." />-->
+<!--    <EditText-->
+<!--        android:id="@+id/birth_up"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginEnd="30dp"-->
+<!--        android:layout_marginStart="30dp"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        android:ems="10"-->
+<!--        android:inputType="date"-->
+<!--        android:fontFamily="@font/gamtanrodeutantan"-->
+<!--        android:textSize="20dp"-->
+<!--        android:textColor="#000000"-->
+<!--        android:hint="20240101" />-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:fontFamily="@font/gamtanrodeutantan"
+        android:textSize="13dp"
+        android:textColor="#000000"
+        android:text="이메일 주소를 입력하십시오." />
+    <EditText
+        android:id="@+id/email_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:fontFamily="@font/gamtanrodeutantan"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:hint="oooo@oooo.com" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:fontFamily="@font/gamtanrodeutantan"
+        android:textSize="13dp"
+        android:textColor="#000000"
+        android:text="비밀번호를 6자리 이상 입력하십시오." />
+    <EditText
+        android:id="@+id/password_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:fontFamily="@font/gamtanrodeutantan"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:hint="******" />
+
+    <android.widget.Button
+        android:id="@+id/signup_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/loginbuttonshpae"
+        android:fontFamily="@font/gamtanrodeutantan"
+        android:textSize="17dp"
+        android:text="회원가입" />
+
+<!--    <android.widget.Button-->
+<!--        android:id="@+id/cancle_button"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginEnd="30dp"-->
+<!--        android:layout_marginStart="30dp"-->
+<!--        android:layout_marginBottom="20dp"-->
+<!--        android:background="@drawable/signupbuttonshape"-->
+<!--        android:fontFamily="@font/gamtanrodeutantan"-->
+<!--        android:textSize="17dp"-->
+<!--        android:text="Cancle" />-->
+</LinearLayout>

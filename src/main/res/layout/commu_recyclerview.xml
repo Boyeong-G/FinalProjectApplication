@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/item_root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="?attr/selectableItemBackground"
+    android:layout_marginTop="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:background="@drawable/commubackground">
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:columnCount="2">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gamtanrodeutantan"
+                android:text="Q.  "
+                android:textColor="#000000"
+                android:textSize="22dp" />
+            <TextView
+                android:id="@+id/commu_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gamtanrodeutantan"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="22dp" />
+        </GridLayout>
+        <TextView
+            android:id="@+id/commu_contents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gamtanrodeutantan"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="17dp" />
+        <TextView
+            android:id="@+id/commu_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/gamtanrodeutantan"
+            android:text="0000.00.00 hh:ss"
+            android:textSize="15dp" />
+    </LinearLayout>
+</LinearLayout>

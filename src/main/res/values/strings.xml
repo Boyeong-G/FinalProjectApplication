@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Compedia</string>
+    <string name="drawer_opened">Open drawer</string>
+    <string name="drawer_closed">Close drawer</string>
+    <string name="default_client_id">275508763746-o7afi4vgvjvci6odph1dpjbdd7i2nn0s.apps.googleusercontent.com</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

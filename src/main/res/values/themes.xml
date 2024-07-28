@@ -1,0 +1,31 @@
+<resources
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+<!--    <style name="Commu" parent="Theme.Material3.DayNight">-->
+<!--        &lt;!&ndash; Customize your light theme here. &ndash;&gt;-->
+<!--        <item name="colorPrimaryDark">@color/white</item>-->
+<!--        <item name="colorPrimary">@color/white</item>-->
+<!--        <item name="android:windowLightStatusBar">true</item>-->
+<!--    </style>-->
+
+    <style name="SplashTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+<!--        <item name="android:windowBackground">@drawable/splash</item>-->
+    </style>
+
+<!--    <style name="Fab" parent="Theme.MaterialComponents.Light">-->
+<!--        <item name="colorPrimaryDark">@color/white</item>-->
+<!--        <item name="colorPrimary">@color/white</item>-->
+<!--        <item name="android:windowLightStatusBar">true</item>-->
+<!--    </style>-->
+
+    <style name="Base.Theme.FinalProjectApplication" parent="Theme.AppCompat.Light">
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorPrimary">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="Theme.FinalProjectApplication" parent="Base.Theme.FinalProjectApplication" />
+</resources>
